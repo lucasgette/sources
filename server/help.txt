@@ -1,0 +1,9 @@
+El token se genera al momento de hacer el login. Este lo tenemos que:
+* Almacenar en el local storage
+* Almacenar en nuestro estado con redux
+
+El tokem tiene info del usuario (en este caso, username y id)
+
+El middleware verifyToken, va a chequear si hay un authorization header que esté pasando el token.
+
+Cuando hagamos una solicitud a través de Axios, tendremos que pasar en header el token -> Authorization: `Bearer ${token}`
